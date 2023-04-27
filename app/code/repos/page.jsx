@@ -11,7 +11,7 @@ async function fetchRepos() {
   return data;
 }
 
-const Repos = async () => {
+const ReposPage = async () => {
   const repos = await fetchRepos();
 
   return (
@@ -42,4 +42,4 @@ const Repos = async () => {
   );
 };
 
-export default Repos;
+export default ReposPage;
