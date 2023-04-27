@@ -7,7 +7,6 @@ async function fetchRepos() {
   const data = await response.json();
 
   await new Promise((resolve) => setTimeout(resolve, 500));
-
   return data;
 }
 

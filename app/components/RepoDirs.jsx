@@ -3,7 +3,7 @@ import Link from "next/link";
 
 async function fetchRepoContent(name) {
   await new Promise((resolve) => setTimeout(resolve, 3000));
-
+  
   const response = await fetch(
     `https://api.github.com/repos/majid-2002/${name}/contents`
   );
@@ -21,7 +21,7 @@ const RepoDirs = async ({ name }) => {
       <ul>
         {dirs.map((dir) => (
           <li key={dir.path}>
-            <Link href={`code/repose/${name}/${dir.path}`}>{dir.path}</Link>
+            <Link href={`code/repos/${name}/${dir.path}`}>{dir.path}</Link>
           </li>
         ))}
       </ul>
