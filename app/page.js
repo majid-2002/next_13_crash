@@ -1,23 +1,13 @@
-import React from 'react'
-import Link from 'next/link';
+import React from "react";
+import Courses from "./components/Courses";
 
 const Home = () => {
   return (
     <div>
       <h1>Welcome to HomePage</h1>
-      <ul className='links'>
-        <li>
-          <Link href="/">Home</Link>
-        </li>
-        <li>
-          <Link href="/about">About</Link>
-        </li>
-        <li>
-          <Link href="/about/team">Team</Link>
-        </li>
-      </ul>
+      <Courses />
     </div>
-  )
-}
+  );
+};
 
 export default Home;
