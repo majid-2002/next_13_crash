@@ -1,17 +1,6 @@
-import React from "react";
 import Link from "next/link";
 
-async function fetchCourses() {
-  const respose = await fetch("http://localhost:3000/api/courses");
-
-  const courses = await respose.json();
-
-  return courses;
-}
-
-const Courses = async () => {
-  const courses = await fetchCourses();
-
+const Courses = async ({ courses }) => {
   return (
     <div className="courses">
       {courses.map((course) => (

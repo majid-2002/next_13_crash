@@ -27,7 +27,11 @@ const RepoDirs = async ({ name }) => {
       <ul>
         {dirs.map((dir) => (
           <li key={dir.path}>
-            <Link href={`/code/repos/${name}/${dir.path}`}>{dir.path}</Link>
+            <Link
+              href={`https://github.com/majid-2002/${name}/tree/main/${dir.path}`}
+            >
+              {dir.path}
+            </Link>
           </li>
         ))}
       </ul>
